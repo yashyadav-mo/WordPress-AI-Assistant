@@ -19,8 +19,8 @@ Model Context Protocol (MCP) server to let AI assistants safely create, read, up
 
 ### 1) Clone and install
 ```bash
-git clone <your-repo-url> wordpress-mcp-server
-cd wordpress-mcp-server
+git clone https://github.com/miniOrangeDev/WordPress-AI-Assistant.git
+cd WordPress-AI-Assistant
 npm install
 ```
 
@@ -54,7 +54,7 @@ Configure your MCP-enabled client (e.g., Claude Desktop) to launch this server. 
   "mcpServers": {
     "wordpress": {
       "command": "node",
-      "args": ["A:\\AI\\wc-ai\\mo-mcp-server\\dist\\index.js"],
+      "args": ["path/to/dist/index.js"],
       "env": {
         "WP_SITE_URL": "https://your-wordpress-site.com",
         "WP_USERNAME": "your-username",
